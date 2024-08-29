@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
+import AuthProvider from './components/AuthProvider';
+import DemoUseEfect from './components/DemoUseEffect';
+import ProtectedRoute from './components/ProtectedRoute';
 
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AuthProvider from './components/AuthProvider';
-import ProtectedRoute from './components/ProtectedRoute';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+  },
+  {
+    path: '/use-effect',
+    element: <DemoUseEfect i={5}/>,
   },
   {
     path: '/protected',

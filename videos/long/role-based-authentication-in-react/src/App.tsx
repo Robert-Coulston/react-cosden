@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { useAuth } from './components/AuthProvider';
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
     <div className="flex flex-col">
       <h1 className="text-2xl font-bold">Cosden Solutions</h1>
       <Link to="/protected">Very Protected Route</Link>
+      <Link to="/use-effect">Demo useEffect</Link>
       {authToken ? (
         <button onClick={handleLogout}>Logout</button>
       ) : (

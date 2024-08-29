@@ -1,5 +1,3 @@
-import { getUser, login } from '@/api/auth';
-import { User } from '@/types/user';
 import {
   createContext,
   PropsWithChildren,
@@ -7,6 +5,9 @@ import {
   useEffect,
   useState,
 } from 'react';
+
+import { getUser, login } from '@/api/auth';
+import { User } from '@/types/user';
 
 type AuthContext = {
   authToken?: string | null;
