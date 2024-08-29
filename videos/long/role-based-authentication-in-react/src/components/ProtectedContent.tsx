@@ -13,7 +13,6 @@ function ProtectedContent() {
     navigate('/');
   };
 
-
   const handleTabClick = (tab: string) => {
     console.log(`Clicked on ${tab}`);
     setActiveTab(tab);
@@ -30,7 +29,7 @@ function ProtectedContent() {
       </div>
       <div>
         <Tabs>
-          <TabList className="flex border-b border-gray-300">
+          <TabList className="mx-auto flex w-1/2 border-b border-gray-300">
             <Tab
               className="cursor-pointer rounded-t-lg border border-transparent px-4 py-2 hover:bg-gray-200"
               selectedClassName="bg-gray-300 border-gray-300"
@@ -54,15 +53,17 @@ function ProtectedContent() {
             </Tab>
           </TabList>
 
-          <TabPanel>
-            <p>Content for Tab 1</p>
-          </TabPanel>
-          <TabPanel>
-            <p>Content for Tab 2</p>
-          </TabPanel>
-          <TabPanel>
-            <p>Content for Tab 3</p>
-          </TabPanel>
+          <div className="mx-auto flex w-1/2">
+            <TabPanel>
+              <p>Content for Tab 1 Content for Tab 1 Content for Tab 1 Content for Tab 1 Content for Tab 1 Content for Tab 1</p>
+            </TabPanel>
+            <TabPanel>
+              <p>Content for Tab 2</p>
+            </TabPanel>
+            <TabPanel>
+              <p>Content for Tab 3</p>
+            </TabPanel>
+          </div>
         </Tabs>
       </div>
     </ProtectedRoute>
