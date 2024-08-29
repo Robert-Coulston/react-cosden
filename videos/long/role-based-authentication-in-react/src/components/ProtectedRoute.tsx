@@ -1,5 +1,7 @@
-import { User } from '@/types/user';
 import { PropsWithChildren } from 'react';
+
+import { User } from '@/types/user';
+
 import { useAuth } from './AuthProvider';
 
 type ProtectedRouteProps = PropsWithChildren & {
