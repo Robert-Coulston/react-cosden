@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="flex flex-col">
       <h1 className="text-2xl font-bold">Cosden Solutions</h1>
-      <Link to="/protected">Protected Route</Link>
+      <Link to="/protected">Very Protected Route</Link>
       {authToken ? (
         <button onClick={handleLogout}>Logout</button>
       ) : (
