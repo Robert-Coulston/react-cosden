@@ -7,7 +7,7 @@ body {
 }
 
 button {
-  @apply rounded-md bg-gradient-to-r from-primary-500 to-primary-700 px-6 py-2 font-semibold text-black hover:opacity-50 disabled:from-grayscale-700 disabled:to-grayscale-700 disabled:text-white disabled:opacity-50;
+  @apply mr-4 text-center w-40 rounded-md bg-gradient-to-r from-primary-500 to-primary-700 px-6 py-2 font-semibold text-black hover:opacity-50 disabled:from-grayscale-700 disabled:to-grayscale-700 disabled:text-white disabled:opacity-50;
 }
 
 input[type='text'] {
