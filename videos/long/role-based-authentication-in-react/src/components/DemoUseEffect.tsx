@@ -23,10 +23,8 @@ export default function DemoUseEfect({ i }: DemoProps) {
 
   return (
     <div className="tutorial">
-      <h1 className='mb-4'>Count: {count}</h1>
-      <button onClick={() => setCount((c) => c - 1)}>
-        Decrement
-      </button>
+      <h1 className="mb-4">Count: {count}</h1>
+      <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
       <button onClick={() => setCount((c) => c + 1)}>Increment</button>{' '}
     </div>
   );

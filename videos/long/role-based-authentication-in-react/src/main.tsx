@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import AuthProvider from './components/AuthProvider';
 import DemoUseEfect from './components/DemoUseEffect';
+import DemoUseState from './components/DemoUseState';
 import ProtectedContent from './components/ProtectedContent';
 import ProtectedRoute from './components/ProtectedRoute';
 
 import './index.css';
-import DemoUseState from './components/DemoUseState';
 
 const router = createBrowserRouter([
   {
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/use-effect',
-    element: <DemoUseEfect i={5}/>,
+    element: <DemoUseEfect i={5} />,
   },
   {
     path: '/use-state',
-    element: <DemoUseState i={5}/>,
+    element: <DemoUseState i={5} />,
   },
   {
     path: '/protected/:id?',

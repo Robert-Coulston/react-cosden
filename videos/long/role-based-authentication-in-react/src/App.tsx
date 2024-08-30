@@ -14,8 +14,9 @@ export default function App() {
         <Link to="/use-state">Demo useState</Link>
       </div>
 
-      <Link className='my-4' to="/protected">Very Protected Route. Must be logged in.</Link>
-
+      <Link className="my-4" to="/protected">
+        Very Protected Route. Must be logged in.
+      </Link>
 
       {authToken ? (
         <button onClick={handleLogout}>Logout</button>
