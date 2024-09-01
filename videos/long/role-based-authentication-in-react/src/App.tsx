@@ -12,6 +12,7 @@ export default function App() {
       <div className="my-4 flex flex-col">
         <Link to="/use-effect">Demo useEffect</Link>
         <Link to="/use-state">Demo useState</Link>
+        <Link to="/use-callback">Demo useCallback</Link>
       </div>
 
       <Link className="my-4" to="/protected">
